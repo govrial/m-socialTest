@@ -122,3 +122,28 @@ document.addEventListener('DOMContentLoaded', () => { // DOM готов к вз�
   onScrollHeader() // вызываем основную функцию onScrollHeader
 
 });
+
+
+let modal = document.querySelector("#modal"),
+  modalOverlay = document.querySelector("#modal-overlay"),
+  closeButton = document.querySelector("#close-button"),
+  openButtonAuth = document.querySelector("#open-button-auth"),
+  openButtonReg = document.querySelector("#open-button-reg"),
+  exitButton = document.querySelector("#exit-button");
+
+function close (){
+  modal.classList.add("closed");
+  modalOverlay.classList.add("closed");
+};
+
+function open(){
+  modal.classList.remove("closed");
+  modalOverlay.classList.remove("closed");
+};
+
+closeButton.addEventListener('click', close);
+exitButton.addEventListener('click', close);
+
+openButtonAuth.addEventListener('click', open);
+openButtonReg.addEventListener('click', open);
+
