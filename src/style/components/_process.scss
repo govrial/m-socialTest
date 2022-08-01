@@ -1,0 +1,170 @@
+.process {
+  background-color: #FFCD00;
+  padding: 24% 0 50px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../assets/images/process/spiral-brown.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -20px;
+    left: 15%;
+    width: 45px;
+    height: 40px;
+  }
+
+
+  .container {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../../assets/images/process/baloon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 50px;
+      height: 100px;
+      left: 3%;
+      top: 10%;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../assets/images/process/spiral.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 21px;
+      height: 32px;
+      right: 8%;
+      top: 10%;
+    }
+  }
+
+  &__title {
+    font-size: 34px;
+    color: #e63000;
+    text-align: center;
+    text-shadow: -4px 4px 0px rgba(255, 255, 255, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-text {
+      text-align: center;
+      max-width: 220px;
+      padding-top: 22px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 21px;
+      height: 21px;
+      border-width: 3px 3px 0 0;
+      border-style: solid;
+      border-color: #E30613;
+      transition: .2s ease;
+      display: block;
+      transform: rotate(135deg) translateX(50%);
+      bottom: 0;
+      left: 50%;
+    }
+
+    &:last-child {
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+
+    .container {
+
+      &::before {
+        width: 80px;
+        height: 160px;
+      }
+
+      &::after {
+        width: 31px;
+        height: 47px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 340px;
+    background: linear-gradient(180deg, #ECB200 0%, #FFCF00 78.83%);
+
+    &::before {
+      width: 55px;
+      height: 50px;
+    }
+
+    .container {
+
+      &::before {
+        top: -15%;
+        left: -5%;
+      }
+
+      &::after {
+        top: -2%;
+        right: -4%;
+      }
+    }
+
+    &__title {
+      font-size: 60px;
+    }
+
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 60px;
+    }
+
+    &__item {
+
+      &::before {
+        width: 32px;
+        height: 32px;
+        transform: rotate(45deg);
+        top: 120px;
+        right: -30px;
+        left: unset;
+        bottom: unset;
+      }
+
+      &-image {
+        min-height: 55px;
+      }
+
+      &-text {
+        max-width: 195px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}

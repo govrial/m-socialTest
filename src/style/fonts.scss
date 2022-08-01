@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "PFDinTextCondPro-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/PFDinTextCondPro-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/PFDinTextCondPro-Bold.woff") format("woff");
+  src: url("../assets/fonts/PFDinTextCondPro-Bold.woff2") format("woff2");
+
+}
+
+@font-face {
+  font-family: "PFDinTextCondPro-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/PFDinTextCondPro-Medium.ttf") format("truetype");
+  src: url("../assets/fonts/PFDinTextCondPro-Medium.woff") format("woff");
+  src: url("../assets/fonts/PFDinTextCondPro-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PFDinTextCondPro-Regular";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/PFDinTextCondPro-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/PFDinTextCondPro-Regular.woff") format("woff");
+  src: url("../assets/fonts/PFDinTextCondPro-Regular.woff2") format("woff2");
+}
+
+$font_bold: "PFDinTextCondPro-Bold", sans-serif;
+$font_medium: "PFDinTextCondPro-Medium", sans-serif;
+$font_regular: "PFDinTextCondPro-Regular", sans-serif;

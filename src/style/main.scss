@@ -1,0 +1,101 @@
+@import "fonts.scss";
+@import "viewPortBreakpoints.scss";
+@import "components/preview-oval.scss";
+@import "components/navbar";
+@import "components/process";
+@import "components/products";
+@import "components/socials";
+@import "components/footer";
+@import "components/header";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: baseline;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body{
+  overflow: hidden;
+  overflow-y: auto;
+  font-family: $font_regular;
+
+}
+*,*:before,*:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+span, a, p {
+  color: #5A1404;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 10px;
+
+  @media screen and (min-width: $desktop) {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+}
+
+////////////////////////////////////////header
+
+////////////////////////////////////////header
+
+////////////////main-pic
+.main-picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: calc(150vw/2);
+
+  &__button {
+    position: absolute;
+    background: #E63000;
+    border-radius: 29px;
+    border: 7px solid #EDEDED;
+    padding: 7px 33px;
+    font-size: 14px;
+    text-transform: uppercase;
+    z-index: 4;
+    color: white;
+    bottom: -24%;
+  }
+
+  &__content {
+    bottom: -20%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: calc(90vw/2);
+
+    &__button {
+      bottom: -21%;
+    }
+  }
+}
+////////////////main-pic
